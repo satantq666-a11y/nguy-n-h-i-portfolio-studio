@@ -10,33 +10,92 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CaseStudiesRouteImport } from './routes/case-studies'
+import { Route as DuAnRouteImport } from './routes/du-an'
+import { Route as KinhNghiemRouteImport } from './routes/kinh-nghiem'
+import { Route as LienHeRouteImport } from './routes/lien-he'
+import { Route as ThietKeRouteImport } from './routes/thiet-ke'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CaseStudiesRoute = CaseStudiesRouteImport.update({
+  id: '/case-studies',
+  path: '/case-studies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DuAnRoute = DuAnRouteImport.update({
+  id: '/du-an',
+  path: '/du-an',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KinhNghiemRoute = KinhNghiemRouteImport.update({
+  id: '/kinh-nghiem',
+  path: '/kinh-nghiem',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LienHeRoute = LienHeRouteImport.update({
+  id: '/lien-he',
+  path: '/lien-he',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ThietKeRoute = ThietKeRouteImport.update({
+  id: '/thiet-ke',
+  path: '/thiet-ke',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/case-studies': typeof CaseStudiesRoute
+  '/du-an': typeof DuAnRoute
+  '/kinh-nghiem': typeof KinhNghiemRoute
+  '/lien-he': typeof LienHeRoute
+  '/thiet-ke': typeof ThietKeRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/case-studies': typeof CaseStudiesRoute
+  '/du-an': typeof DuAnRoute
+  '/kinh-nghiem': typeof KinhNghiemRoute
+  '/lien-he': typeof LienHeRoute
+  '/thiet-ke': typeof ThietKeRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/case-studies': typeof CaseStudiesRoute
+  '/du-an': typeof DuAnRoute
+  '/kinh-nghiem': typeof KinhNghiemRoute
+  '/lien-he': typeof LienHeRoute
+  '/thiet-ke': typeof ThietKeRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    '/' | '/case-studies' | '/du-an' | '/kinh-nghiem' | '/lien-he' | '/thiet-ke'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    '/' | '/case-studies' | '/du-an' | '/kinh-nghiem' | '/lien-he' | '/thiet-ke'
+  id:
+    | '__root__'
+    | '/'
+    | '/case-studies'
+    | '/du-an'
+    | '/kinh-nghiem'
+    | '/lien-he'
+    | '/thiet-ke'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CaseStudiesRoute: typeof CaseStudiesRoute
+  DuAnRoute: typeof DuAnRoute
+  KinhNghiemRoute: typeof KinhNghiemRoute
+  LienHeRoute: typeof LienHeRoute
+  ThietKeRoute: typeof ThietKeRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,22 +107,52 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/case-studies': {
+      id: '/case-studies'
+      path: '/case-studies'
+      fullPath: '/case-studies'
+      preLoaderRoute: typeof CaseStudiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/du-an': {
+      id: '/du-an'
+      path: '/du-an'
+      fullPath: '/du-an'
+      preLoaderRoute: typeof DuAnRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kinh-nghiem': {
+      id: '/kinh-nghiem'
+      path: '/kinh-nghiem'
+      fullPath: '/kinh-nghiem'
+      preLoaderRoute: typeof KinhNghiemRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lien-he': {
+      id: '/lien-he'
+      path: '/lien-he'
+      fullPath: '/lien-he'
+      preLoaderRoute: typeof LienHeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/thiet-ke': {
+      id: '/thiet-ke'
+      path: '/thiet-ke'
+      fullPath: '/thiet-ke'
+      preLoaderRoute: typeof ThietKeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CaseStudiesRoute: CaseStudiesRoute,
+  DuAnRoute: DuAnRoute,
+  KinhNghiemRoute: KinhNghiemRoute,
+  LienHeRoute: LienHeRoute,
+  ThietKeRoute: ThietKeRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
