@@ -33,8 +33,10 @@ function Index() {
           <div className="min-w-0">
             <span className="sticker bg-leaf">{profile.role}</span>
             <h1 className="mt-4 text-4xl leading-tight font-bold sm:text-5xl">
-              {profile.greeting}
+              {profile.greeting.replace(" 👋", "")}
+              <span className="font-sans"> 👋</span>
             </h1>
+
             <p className="mt-4 text-lg text-muted-foreground">{profile.tagline}</p>
             <p className="mt-4 max-w-xl">
               Mình là người <strong>chủ động</strong> và <strong>linh hoạt</strong>, thích học cái
