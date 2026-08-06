@@ -46,24 +46,25 @@ export type Project = {
 
 export const mediaProjects: Project[] = [
   {
-    title: "Series video ngắn “Một Ngày Rất Ổn”",
-    desc: "Biên tập 12 video dạng short cho fanpage sinh viên: dựng Premiere Pro, phụ đề, nhạc nền và motion đơn giản.",
-    tags: ["Premiere Pro", "Video Editing", "Short-form"],
+    title: "Chuyển Động 24H - Tiêu điểm: Khi làng xã cần, đất vàng cũng hiến”",
+    desc: "Góp phần biên tập tiêu điểm 'Khi làng xã cần, đất vàng cũng hiến', phát sóng ngày 14/03/2025 trong chương trình Chuyển động 24H trên VTV1.",
+    tags: ["Premiere Pro", "Video Editing", "Phóng sự"],
     image: work2,
-    youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    youtube: "https://www.youtube.com/watch?v=Oc_zhZmS-Hg",
   },
   {
-    title: "Ấn phẩm truyền thông CLB Truyền Thông",
-    desc: "Bộ poster, standee và ấn phẩm mạng xã hội cho 4 sự kiện lớn trong năm học.",
-    tags: ["Canva", "Photoshop", "Key Visual"],
+    title: "CINE7: Chị Tư Hậu",
+    desc: "Biên tập băng phỏng vấn và trích đoạn tái hiện cảnh phim trong 'Chị Tư Hậu', sử dụng chút thủ thuật nho nhỏ vintage trắng đen :) .",
+    tags: ["Premiere Pro", "Video Editing", "Phim tài liệu"],
     image: work4,
+    youtube: "https://www.youtube.com/watch?v=u4I3Q0E3YtQ",
   },
   {
-    title: "Podcast “Học Từ Chuyện Nhỏ”",
-    desc: "Lên kịch bản, dẫn dắt và hậu kỳ audio cho 8 số podcast về kỹ năng cho sinh viên mới.",
-    tags: ["Scriptwriting", "Editorial", "Audio"],
+    title: "Đồ họa MC dẫn - Vì Tầm Vóc Việt số tháng 04/2025”",
+    desc: "Lên kịch bản, dựng đồ họa minh họa và biên tập phóng sự có MC dẫn của chương trình 'Vì Tầm Vóc Việt số tháng 04/2025'",
+    tags: ["Scriptwriting", "Editorial", "Canva"],
     image: work5,
-    youtube: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    youtube: "https://www.youtube.com/watch?v=mHHHAgBdIYE",
   },
 ];
 
