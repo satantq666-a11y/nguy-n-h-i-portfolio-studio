@@ -16,7 +16,13 @@ const bgFor: Record<LinkType, string> = {
 };
 
 /** Danh sách liên kết ngoài (YouTube / Facebook / Google Drive / website). */
-export function DetailLinks({ links, title = "Liên kết" }: { links?: SiteLink[]; title?: string }) {
+export function DetailLinks({
+  links,
+  title = "Liên kết",
+}: {
+  links?: SiteLink[] | undefined;
+  title?: string;
+}) {
   if (!links || links.length === 0) return null;
 
   return (
@@ -49,7 +55,7 @@ export function DetailLinks({ links, title = "Liên kết" }: { links?: SiteLink
 }
 
 /** Nhóm icon nhỏ hiển thị ở thẻ trong trang danh sách. */
-export function LinkBadges({ links }: { links?: SiteLink[] }) {
+export function LinkBadges({ links }: { links?: SiteLink[] | undefined }) {
   if (!links || links.length === 0) return null;
 
   return (
