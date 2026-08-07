@@ -186,7 +186,7 @@ export const gallery: GalleryItem[] = [
 ],
   },
   {
-    slug: "VNVK",
+    slug: "vnvk",
     title: "Việt Nam Vui Khỏe",
     desc: "‘Việt Nam vui khỏe’ - chương trình hợp tác bởi VTV và Vinamilk - có được sự quan tâm của đông đảo khán giả.",
     image: work1,
@@ -243,7 +243,7 @@ export const gallery: GalleryItem[] = [
     ],
   },
   {
-    slug: "VTVV",
+    slug: "vtvv",
     title: "Vì Tầm Vóc Việt",
     desc: "“Vì tầm vóc Việt” đưa ra những vấn đề thời sự về lứa tuổi học đường, với những phân tích, bình luận sâu sắc của các chuyên gia đầu ngành trong lĩnh vực giáo dục, y tế…",
     image: work3,
@@ -266,7 +266,7 @@ export const gallery: GalleryItem[] = [
     ],
   },
   {
-    slug: "ATVTV",
+    slug: "atvtv",
     title: "Bộ khung nhận diện Ấn tượng VTV",
     desc: "Bộ khung Ấn tượng VTV được ra mắt để phù hợp với định hướng mới cho fanpage Ấn tượng VTV",
     image: work5,
@@ -319,7 +319,7 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    slug: "HCDmusic",
+    slug: "hcdmc",
     title: "Case study branding: HCD Music Center",
     problem: "HCD Music Center chuẩn bị ra mắt trung tâm đào tạo âm nhạc mới nhưng chưa có hệ thống nhận diện thương hiệu thống nhất, định vị rõ ràng và kế hoạch truyền thông bài bản để cạnh tranh trên thị trường giáo dục âm nhạc.",
     approach:
@@ -380,43 +380,45 @@ export const caseStudies: CaseStudy[] = [
       "Bước 4: Hoàn thiện & đánh giá: Thiết kế các sản phẩm truyền thông, xây dựng kế hoạch triển khai và đánh giá hiệu quả của chiến dịch.",
     ],
     links: [
-      { label: "Báo cáo Dự án 'Sống chậm lại- Nghĩ khác đi'", href: "https://drive.google.com/file/d/1FKvPKTiJHoqsrzp_QYpxgULMbQO1PSbO/view?usp=drive_link", type: "drive" },
+      { label: "Báo cáo Dự án 'Sống chậm lại- Nghĩ khác đi'", 
+       href: "https://drive.google.com/file/d/1FKvPKTiJHoqsrzp_QYpxgULMbQO1PSbO/view?usp=drive_link", 
+       type: "drive" },
     ],
   },
 ];
 
 export const education = [
   {
-    period: "2021 — 2025",
-    title: "Cử nhân Truyền thông",
-    org: "Đại học (điền tên trường của bạn)",
-    detail: "Chuyên đề: truyền thông thương hiệu, sản xuất nội dung số, nghiên cứu công chúng.",
+    period: "2022 — 2026",
+    title: "Cử nhân Quản trị kinh doanh",
+    org: "Đại học FPT",
+    detail: "Chuyên ngành: Truyền thông Đa phương tiện - PR",
   },
 ];
 
 export const experience = [
   {
-    period: "2024 — 2025",
-    title: "Thực tập sinh Content & Social",
-    org: "Agency truyền thông (điền tên)",
-    detail: "Viết bài fanpage, lên ý tưởng chiến dịch nhỏ, phối hợp designer và editor.",
+    period: "01/2026 - 04/2026",
+    title: "Leader Đồ án chuyên ngành: Tổ chức sự kiện Happy Tết 2026 tại Hoàng Thành Thăng Long",
+    org: "Sở Du lịch Hà Nội & BLUEVN Agency",
+    detail: "Quản lý đội nhóm, viết bài fanpage, lên ý tưởng chiến dịch truyền thông, phối hợp với agency để đạt được hiệu quả truyền thông theo yêu cầu.",
   },
   {
-    period: "2023 — 2024",
-    title: "Trưởng ban Nội dung — CLB Truyền Thông",
-    org: "Câu lạc bộ sinh viên",
-    detail: "Quản lý nhóm 8 thành viên, vận hành lịch nội dung và ấn phẩm cho 4 sự kiện lớn.",
+    period: "05/2025 - 12/2025",
+    title: "Leader các nhóm môn học",
+    org: "FPT University",
+    detail: "Quản lý nhóm 5-6 thành viên cho các dự án môn học chuyên ngành truyền thông .",
   },
   {
-    period: "2023",
-    title: "Freelance Video Editor",
-    org: "Dự án cá nhân",
-    detail: "Dựng video ngắn cho các thương hiệu nhỏ và kênh cá nhân.",
+    period: "01/2025 - 04/2025",
+    title: "Biên tập viên, Content Creator, Video Editor",
+    org: "Phòng Văn hóa - VTV24, VTV - Đài Truyền hình Việt Nam",
+    detail: "Intern tại VTV với nhiều kinh nghiệm thực tế học hỏi được.",
   },
 ];
 
 export const achievements = [
-  "Top 5 cuộc thi ý tưởng truyền thông sinh viên 2024",
-  "Chiến dịch “Xanh Từ Việc Nhỏ” đạt 1.200+ người tham gia",
+  "Tác giả tham luận 'Ethical AI in Public relations: Building a contextual framework for transparency and accountability in Vietnam' được xuất bản trong Kỷ yếu Hội thảo khoa học 'A new dawn for media education: Navigating AI and advandcing national aspirations' (ISBN: 978-604-45-2379-8), 2025.",
+  "Sinh viên giỏi 5 kỳ liên tiếp",
   "Sản xuất hơn 60 ấn phẩm truyền thông trong 2 năm",
 ];
