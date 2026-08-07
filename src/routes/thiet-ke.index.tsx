@@ -4,7 +4,7 @@ import { PageHeader, SiteLayout } from "@/components/site-layout";
 import { LinkBadges } from "@/components/detail-links";
 import { gallery } from "@/lib/site-data";
 
-export const Route = createFileRoute("/thiet-ke")({
+export const Route = createFileRoute("/thiet-ke/")({
   head: () => ({
     meta: [
       { title: "Thiết kế & Gallery — Nguyễn Hải" },

@@ -4,7 +4,7 @@ import { PageHeader, SiteLayout } from "@/components/site-layout";
 import { LinkBadges } from "@/components/detail-links";
 import { caseStudies } from "@/lib/site-data";
 
-export const Route = createFileRoute("/case-studies")({
+export const Route = createFileRoute("/case-studies/")({
   head: () => ({
     meta: [
       { title: "Branding Case Studies — Nguyễn Hải" },
