@@ -154,14 +154,17 @@ export type GalleryItem = {
 
 export const gallery: GalleryItem[] = [
   {
-    slug: "key-visual-su-kien",
-    title: "Key visual sự kiện",
-    desc: "Bộ key visual cho sự kiện văn hoá: poster chính, backdrop và standee.",
+    slug: "chuyen-dong-24h",
+    title: "Chuyển Động 24H",
+    desc: "Tham gia vào quá trình sản xuất các phóng sự của chương trình Chuyển Động 24h, phát sóng trên VTV1, Đài Truyền hình Việt Nam.",
     image: work4,
-    tags: ["Canva", "Photoshop", "Key visual"],
+    tags: ["Premiere Pro", "Canva", "Phóng sự"],
     body: [
-      "Key visual được xây dựng từ tinh thần “vui, gần gũi, dễ nhớ”: bảng màu pastel, hình khối bo tròn và typography monospace cho phần tiêu đề.",
-      "Bộ ấn phẩm gồm poster chính, backdrop sân khấu, standee chỉ dẫn và template ảnh đăng fanpage.",
+      "Đề tài các phóng sự đa dạng, bao gồm hai nhóm chính là phóng sự xã hội và phóng sự văn hóa."
+      "Tham gia vào quá trình ghi hình, phỏng vấn hiện trường."
+      "Biên tập, chỉnh sửa các phóng sự, bao gồm Tiêu điểm."
+      "Biên dịch, phiên dịch tiếng Anh khi phỏng vấn đối tượng nước ngoài."
+      "Văn phong, phong cách cân bằng giữa việc phù hợp với tiêu chuẩn của kênh truyền hình nhà nước, vừa giữ được nhịp độ trẻ trung, phù hợp với đinh hướng của chương trình." ,
     ],
     images: [work1, work5],
     links: [{ label: "Fanpage sự kiện", href: "https://www.facebook.com/", type: "facebook" }],
