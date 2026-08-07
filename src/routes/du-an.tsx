@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Youtube } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { PageHeader, SiteLayout } from "@/components/site-layout";
 import { commsProjects, mediaProjects, skills, type Project } from "@/lib/site-data";
 
@@ -45,15 +45,21 @@ function ProjectCard({ p }: { p: Project }) {
             </li>
           ))}
         </ul>
-        {p.youtube && (
-          <a
-            href={p.youtube}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-4 inline-flex items-center gap-2 font-mono text-sm underline decoration-dotted"
-          >
-            <Youtube className="h-4 w-4 shrink-0" /> Xem trên YouTube
-          </a>
+        {p.links && p.links.length > 0 && (
+          <ul className="mt-4 space-y-2">
+            {p.links.map((l) => (
+              <li key={l.href + l.label}>
+                <a
+                  href={l.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-start gap-2 font-mono text-sm underline decoration-dotted"
+                >
+                  <ExternalLink className="mt-0.5 h-4 w-4 shrink-0" /> {l.label}
+                </a>
+              </li>
+            ))}
+          </ul>
         )}
       </div>
     </article>
