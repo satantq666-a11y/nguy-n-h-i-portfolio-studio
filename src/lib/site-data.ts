@@ -187,17 +187,18 @@ export const gallery: GalleryItem[] = [
   {
     slug: "VNVK",
     title: "Việt Nam Vui Khỏe",
-    desc: "Bộ template đăng bài cho fanpage: ảnh bìa, ảnh vuông, story và carousel.",
+    desc: "‘Việt Nam vui khỏe’ - chương trình hợp tác bởi VTV và Vinamilk - có được sự quan tâm của đông đảo khán giả.",
     image: work1,
     tags: ["Canva", "Social Media", "Template"],
     body: [
-      "Mục tiêu là để đội nội dung tự đăng bài đúng nhận diện mà không cần designer hỗ trợ từng post.",
-      "Kit gồm 12 template chia theo dạng nội dung: thông báo, kiến thức, hậu trường và tương tác.",
+      "Chương trình 'Việt Nam vui khỏe' là cuốn cẩm nang sức khỏe toàn diện về thể chất và tinh thần cho các thế hệ trong gia đình Việt, được lên sóng VTV1 vào 20h05 mỗi ngày.",
+      "Tham gia vào quá trình ghi hình, phỏng vấn hiện trường.",
+      "Lên kịch bản, biên tập, chỉnh sửa các phóng sự phỏng vấn.",
     ],
     links: [
       {
         label: "Xem bộ template (Google Drive)",
-        href: "https://drive.google.com/",
+        href: "https://www.youtube.com/watch?v=UZVvxe3GaX0",
         type: "drive",
       },
     ],
