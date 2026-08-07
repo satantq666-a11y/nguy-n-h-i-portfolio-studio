@@ -167,10 +167,23 @@ export const gallery: GalleryItem[] = [
       "Văn phong, phong cách cân bằng giữa việc phù hợp với tiêu chuẩn của kênh truyền hình nhà nước, vừa giữ được nhịp độ trẻ trung, phù hợp với đinh hướng của chương trình." ,
     ],
     images: [work1, work5],
-    links: [{ label: "Tiêu điểm: Khi làng xã cần, đất vàng cũng hiến", href: "https://www.youtube.com/watch?v=ppW6KAdkfw8", type: "youtube" }],
-    links: [{ label: "Tiêu điểm: Độc thân ngày Valentine", href: "https://www.youtube.com/watch?v=xerxTb0yShE", type: "youtube" }],
-    links: [{ label: "Phóng sự: Tết Việt Tết Phố", href: "https://www.facebook.com/share/v/18Ns2xoKW1/", type: "facebook" }],
+    links: [
+  {
+    label: "Tiêu điểm: Khi làng xã cần, đất vàng cũng hiến",
+    href: "https://www.youtube.com/watch?v=ppW6KAdkfw8",
+    type: "youtube",
   },
+  {
+    label: "Tiêu điểm: Độc thân ngày Valentine",
+    href: "https://www.youtube.com/watch?v=xerxTb0yShE",
+    type: "youtube",
+  },
+  {
+    label: "Phóng sự: Tết Việt Tết Phố",
+    href: "https://www.facebook.com/share/v/18Ns2xoKW1/",
+    type: "facebook",
+  },
+],
   {
     slug: "VNVK",
     title: "Việt Nam Vui Khỏe",
