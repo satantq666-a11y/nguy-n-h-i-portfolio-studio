@@ -324,10 +324,7 @@ export const caseStudies: CaseStudy[] = [
     problem: "HCD Music Center chuẩn bị ra mắt trung tâm đào tạo âm nhạc mới nhưng chưa có hệ thống nhận diện thương hiệu thống nhất, định vị rõ ràng và kế hoạch truyền thông bài bản để cạnh tranh trên thị trường giáo dục âm nhạc.",
     approach:
       "Thực hiện Brand Audit kết hợp nghiên cứu thị trường, khách hàng và đối thủ; xây dựng chiến lược định vị thương hiệu, bộ nhận diện mới và kế hoạch Integrated Marketing Communication (IMC) nhằm phát triển Brand Equity cho HCD Music Center.",
-    result: "Đề xuất hoàn chỉnh bao gồm:", 
-    "Định vị thương hiệu với POPs, PODs và Brand Positioning.",
-    "Bộ nhận diện thương hiệu (logo, slogan, brand mantra, brand statement).",
-    "Chiến lược Marketing Mix (4P) và chiến dịch truyền thông 'Your Sound. Your Story' nhằm tăng nhận diện thương hiệu và thu hút học viên trong giai đoạn ra mắt.",
+    result: "Đề xuất hoàn chỉnh bao gồm: Định vị thương hiệu với POPs, PODs và Brand Positioning.; Bộ nhận diện thương hiệu (logo, slogan, brand mantra, brand statement); Chiến lược Marketing Mix (4P) và chiến dịch truyền thông 'Your Sound. Your Story' nhằm tăng nhận diện thương hiệu và thu hút học viên trong giai đoạn ra mắt.",
     tags: ["Brand Strategy", "Brand Audit", "Research", "Social Media"],
     image: work3,
     body: [
