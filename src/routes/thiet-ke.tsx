@@ -1,6 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { Youtube } from "lucide-react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowRight } from "lucide-react";
 import { PageHeader, SiteLayout } from "@/components/site-layout";
+import { LinkBadges } from "@/components/detail-links";
 import { gallery } from "@/lib/site-data";
 
 export const Route = createFileRoute("/thiet-ke")({
@@ -36,32 +37,30 @@ function Page() {
       <section className="mx-auto max-w-6xl px-4 pt-10 sm:px-6">
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {gallery.map((g) => (
-            <figure key={g.title} className="paper-soft group overflow-hidden">
-              <img
-                src={g.image}
-                alt={g.title}
-                loading="lazy"
-                width={1024}
-                height={768}
-                className="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-              />
-              <figcaption className="flex items-center justify-between gap-3 border-t border-border p-4">
-                <span className="min-w-0 truncate font-mono text-sm">{g.title}</span>
-                {g.youtube ? (
-                  <a
-                    href={g.youtube}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`Xem ${g.title} trên YouTube`}
-                    className="grid h-8 w-8 shrink-0 place-items-center rounded-full border-2 border-foreground bg-leaf"
-                  >
-                    <Youtube className="h-4 w-4" />
-                  </a>
-                ) : (
-                  <span className="sticker shrink-0 bg-sand">Design</span>
-                )}
-              </figcaption>
-            </figure>
+            <Link
+              key={g.slug}
+              to="/thiet-ke/$slug"
+              params={{ slug: g.slug }}
+              className="paper-soft group block overflow-hidden transition-transform hover:-translate-y-1"
+            >
+              <figure>
+                <img
+                  src={g.image}
+                  alt={g.title}
+                  loading="lazy"
+                  width={1024}
+                  height={768}
+                  className="aspect-square w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                />
+                <figcaption className="flex items-center justify-between gap-3 border-t border-border p-4">
+                  <span className="min-w-0 truncate font-mono text-sm">{g.title}</span>
+                  <span className="flex shrink-0 items-center gap-2">
+                    <LinkBadges links={g.links} />
+                    <ArrowRight className="h-4 w-4" />
+                  </span>
+                </figcaption>
+              </figure>
+            </Link>
           ))}
         </div>
       </section>
