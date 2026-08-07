@@ -2,7 +2,7 @@ import { createFileRoute, notFound, Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { PageHeader, SiteLayout } from "@/components/site-layout";
 import { DetailLinks } from "@/components/detail-links";
-import { caseStudies } from "@/lib/site-data";
+import { caseStudies, type CaseStudy } from "@/lib/site-data";
 
 export const Route = createFileRoute("/case-studies/$slug")({
   loader: ({ params }) => {
@@ -65,7 +65,7 @@ function DetailError() {
 }
 
 function Page() {
-  const { item } = Route.useLoaderData();
+  const { item } = Route.useLoaderData() as { item: CaseStudy };
 
   return (
     <SiteLayout>

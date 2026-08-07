@@ -2,7 +2,7 @@ import { createFileRoute, notFound, Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { PageHeader, SiteLayout } from "@/components/site-layout";
 import { DetailLinks } from "@/components/detail-links";
-import { gallery } from "@/lib/site-data";
+import { gallery, type GalleryItem } from "@/lib/site-data";
 
 export const Route = createFileRoute("/thiet-ke/$slug")({
   loader: ({ params }) => {
@@ -64,7 +64,7 @@ function DetailError() {
 }
 
 function Page() {
-  const { item } = Route.useLoaderData();
+  const { item } = Route.useLoaderData() as { item: GalleryItem };
 
   return (
     <SiteLayout>
