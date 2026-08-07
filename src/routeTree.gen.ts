@@ -10,9 +10,11 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CaseStudiesRouteImport } from './routes/case-studies'
 import { Route as DuAnRouteImport } from './routes/du-an'
 import { Route as KinhNghiemRouteImport } from './routes/kinh-nghiem'
 import { Route as LienHeRouteImport } from './routes/lien-he'
+import { Route as ThietKeRouteImport } from './routes/thiet-ke'
 import { Route as CaseStudiesIndexRouteImport } from './routes/case-studies.index'
 import { Route as CaseStudiesSlugRouteImport } from './routes/case-studies.$slug'
 import { Route as ThietKeIndexRouteImport } from './routes/thiet-ke.index'
@@ -21,6 +23,11 @@ import { Route as ThietKeSlugRouteImport } from './routes/thiet-ke.$slug'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CaseStudiesRoute = CaseStudiesRouteImport.update({
+  id: '/case-studies',
+  path: '/case-studies',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DuAnRoute = DuAnRouteImport.update({
@@ -38,32 +45,39 @@ const LienHeRoute = LienHeRouteImport.update({
   path: '/lien-he',
   getParentRoute: () => rootRouteImport,
 } as any)
-const CaseStudiesIndexRoute = CaseStudiesIndexRouteImport.update({
-  id: '/case-studies/',
-  path: '/case-studies/',
+const ThietKeRoute = ThietKeRouteImport.update({
+  id: '/thiet-ke',
+  path: '/thiet-ke',
   getParentRoute: () => rootRouteImport,
+} as any)
+const CaseStudiesIndexRoute = CaseStudiesIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => CaseStudiesRoute,
 } as any)
 const CaseStudiesSlugRoute = CaseStudiesSlugRouteImport.update({
-  id: '/case-studies/$slug',
-  path: '/case-studies/$slug',
-  getParentRoute: () => rootRouteImport,
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => CaseStudiesRoute,
 } as any)
 const ThietKeIndexRoute = ThietKeIndexRouteImport.update({
-  id: '/thiet-ke/',
-  path: '/thiet-ke/',
-  getParentRoute: () => rootRouteImport,
+  id: '/',
+  path: '/',
+  getParentRoute: () => ThietKeRoute,
 } as any)
 const ThietKeSlugRoute = ThietKeSlugRouteImport.update({
-  id: '/thiet-ke/$slug',
-  path: '/thiet-ke/$slug',
-  getParentRoute: () => rootRouteImport,
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => ThietKeRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/case-studies': typeof CaseStudiesRouteWithChildren
   '/du-an': typeof DuAnRoute
   '/kinh-nghiem': typeof KinhNghiemRoute
   '/lien-he': typeof LienHeRoute
+  '/thiet-ke': typeof ThietKeRouteWithChildren
   '/case-studies/$slug': typeof CaseStudiesSlugRoute
   '/thiet-ke/$slug': typeof ThietKeSlugRoute
   '/case-studies/': typeof CaseStudiesIndexRoute
@@ -82,9 +96,11 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/case-studies': typeof CaseStudiesRouteWithChildren
   '/du-an': typeof DuAnRoute
   '/kinh-nghiem': typeof KinhNghiemRoute
   '/lien-he': typeof LienHeRoute
+  '/thiet-ke': typeof ThietKeRouteWithChildren
   '/case-studies/$slug': typeof CaseStudiesSlugRoute
   '/thiet-ke/$slug': typeof ThietKeSlugRoute
   '/case-studies/': typeof CaseStudiesIndexRoute
@@ -94,9 +110,11 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/case-studies'
     | '/du-an'
     | '/kinh-nghiem'
     | '/lien-he'
+    | '/thiet-ke'
     | '/case-studies/$slug'
     | '/thiet-ke/$slug'
     | '/case-studies/'
@@ -114,9 +132,11 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/case-studies'
     | '/du-an'
     | '/kinh-nghiem'
     | '/lien-he'
+    | '/thiet-ke'
     | '/case-studies/$slug'
     | '/thiet-ke/$slug'
     | '/case-studies/'
@@ -125,13 +145,11 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CaseStudiesRoute: typeof CaseStudiesRouteWithChildren
   DuAnRoute: typeof DuAnRoute
   KinhNghiemRoute: typeof KinhNghiemRoute
   LienHeRoute: typeof LienHeRoute
-  CaseStudiesSlugRoute: typeof CaseStudiesSlugRoute
-  ThietKeSlugRoute: typeof ThietKeSlugRoute
-  CaseStudiesIndexRoute: typeof CaseStudiesIndexRoute
-  ThietKeIndexRoute: typeof ThietKeIndexRoute
+  ThietKeRoute: typeof ThietKeRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -141,6 +159,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/case-studies': {
+      id: '/case-studies'
+      path: '/case-studies'
+      fullPath: '/case-studies'
+      preLoaderRoute: typeof CaseStudiesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/du-an': {
@@ -164,46 +189,78 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LienHeRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/thiet-ke': {
+      id: '/thiet-ke'
+      path: '/thiet-ke'
+      fullPath: '/thiet-ke'
+      preLoaderRoute: typeof ThietKeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/case-studies/': {
       id: '/case-studies/'
-      path: '/case-studies'
+      path: '/'
       fullPath: '/case-studies/'
       preLoaderRoute: typeof CaseStudiesIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof CaseStudiesRoute
     }
     '/case-studies/$slug': {
       id: '/case-studies/$slug'
-      path: '/case-studies/$slug'
+      path: '/$slug'
       fullPath: '/case-studies/$slug'
       preLoaderRoute: typeof CaseStudiesSlugRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof CaseStudiesRoute
     }
     '/thiet-ke/': {
       id: '/thiet-ke/'
-      path: '/thiet-ke'
+      path: '/'
       fullPath: '/thiet-ke/'
       preLoaderRoute: typeof ThietKeIndexRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof ThietKeRoute
     }
     '/thiet-ke/$slug': {
       id: '/thiet-ke/$slug'
-      path: '/thiet-ke/$slug'
+      path: '/$slug'
       fullPath: '/thiet-ke/$slug'
       preLoaderRoute: typeof ThietKeSlugRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof ThietKeRoute
     }
   }
 }
 
+interface CaseStudiesRouteChildren {
+  CaseStudiesSlugRoute: typeof CaseStudiesSlugRoute
+  CaseStudiesIndexRoute: typeof CaseStudiesIndexRoute
+}
+
+const CaseStudiesRouteChildren: CaseStudiesRouteChildren = {
+  CaseStudiesSlugRoute: CaseStudiesSlugRoute,
+  CaseStudiesIndexRoute: CaseStudiesIndexRoute,
+}
+
+const CaseStudiesRouteWithChildren = CaseStudiesRoute._addFileChildren(
+  CaseStudiesRouteChildren,
+)
+
+interface ThietKeRouteChildren {
+  ThietKeSlugRoute: typeof ThietKeSlugRoute
+  ThietKeIndexRoute: typeof ThietKeIndexRoute
+}
+
+const ThietKeRouteChildren: ThietKeRouteChildren = {
+  ThietKeSlugRoute: ThietKeSlugRoute,
+  ThietKeIndexRoute: ThietKeIndexRoute,
+}
+
+const ThietKeRouteWithChildren =
+  ThietKeRoute._addFileChildren(ThietKeRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CaseStudiesRoute: CaseStudiesRouteWithChildren,
   DuAnRoute: DuAnRoute,
   KinhNghiemRoute: KinhNghiemRoute,
   LienHeRoute: LienHeRoute,
-  CaseStudiesSlugRoute: CaseStudiesSlugRoute,
-  ThietKeSlugRoute: ThietKeSlugRoute,
-  CaseStudiesIndexRoute: CaseStudiesIndexRoute,
-  ThietKeIndexRoute: ThietKeIndexRoute,
+  ThietKeRoute: ThietKeRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
