@@ -46,7 +46,7 @@ export type Project = {
 
 export const mediaProjects: Project[] = [
   {
-    title: "Chuyển Động 24H - Tiêu điểm: Khi làng xã cần, đất vàng cũng hiến”",
+    title: "Chuyển Động 24H - Tiêu điểm: ”Khi làng xã cần, đất vàng cũng hiến”",
     desc: "Góp phần biên tập tiêu điểm 'Khi làng xã cần, đất vàng cũng hiến', phát sóng ngày 14/03/2025 trong chương trình Chuyển động 24H trên VTV1.",
     tags: ["Premiere Pro", "Video Editing", "Phóng sự"],
     image: work2,
@@ -61,7 +61,7 @@ export const mediaProjects: Project[] = [
   },
   {
     title: "Đồ họa MC dẫn - Vì Tầm Vóc Việt số tháng 04/2025”",
-    desc: "Lên kịch bản, dựng đồ họa minh họa và biên tập phóng sự có MC dẫn của chương trình 'Vì Tầm Vóc Việt số tháng 04/2025'",
+    desc: "Lên kịch bản, dựng đồ họa minh họa và biên tập phóng sự có MC dẫn của chương trình 'Vì Tầm Vóc Việt số tháng 04/2025'.",
     tags: ["Scriptwriting", "Editorial", "Canva"],
     image: work5,
     youtube: "https://www.youtube.com/watch?v=mHHHAgBdIYE",
@@ -70,22 +70,25 @@ export const mediaProjects: Project[] = [
 
 export const commsProjects: Project[] = [
   {
-    title: "Chiến dịch “Xanh Từ Việc Nhỏ”",
-    desc: "Chiến dịch truyền thông môi trường 6 tuần: định vị thông điệp, content pillar, lịch đăng và báo cáo hiệu quả.",
-    tags: ["Campaign", "Social Media", "Research"],
+    title: "Truyền thông Happy Tết 2026 Festival”",
+    desc: "Quản lý đội nhóm, phối hợp với đơn vị BlueVN Agency triển khai chiến dịch truyền thông dành cho sự Kiện Happy Tết 2026 dưới sự chỉ đạo của Sở Du lịch Hà Nội.",
+    tags: ["Campaign", "Social Media", "Management"],
     image: work1,
+    facebook: "https://www.facebook.com/happytet2024",
   },
   {
-    title: "Case study branding: quán cà phê Cỏ Cây",
-    desc: "Nghiên cứu khách hàng, xây dựng brand key, tone of voice và bộ nhận diện cơ bản cho thương hiệu địa phương.",
-    tags: ["Brand Strategy", "Case Study", "Identity"],
+    title: "Case study branding: HCD Music Center",
+    desc: "Xây dựng Nhận diện Thương hiệu và Kế hoạch Truyền thông Marketing cho HCD Music Center, đề xuất được đánh giá cao bởi giảng viên môn Branding Management và founder của HCD Music Center.",
+    tags: ["Brand Strategy", "Case Study", "Brand Audit"],
     image: work3,
+    link: "https://drive.google.com/file/d/1fRyeiajdaiUbbh6pN1dOWjPWUuLpFR_q/view?usp=sharing",
   },
   {
-    title: "Báo cáo & bản tin nội bộ",
-    desc: "Thiết kế bản tin định kỳ và infographic tổng hợp số liệu truyền thông cho ban điều hành dự án.",
-    tags: ["Editorial", "Infographic", "Copywriting"],
+    title: "Content creator VTV SHOWS",
+    desc: "Sáng tạo nội dung đa dạng cho fanpage VTV SHOWS - chuyên trang giải trí của VTV, trong giai đoạn tháng 1/2205 - 4/2025.",
+    tags: ["Editorial", "Content", "Copywriting"],
     image: work6,
+    facebook: "https://www.facebook.com/vtvshows",
   },
 ];
 
