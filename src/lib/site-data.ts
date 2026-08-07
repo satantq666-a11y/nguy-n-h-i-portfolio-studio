@@ -184,6 +184,7 @@ export const gallery: GalleryItem[] = [
     type: "facebook",
   },
 ],
+  },
   {
     slug: "VNVK",
     title: "Việt Nam Vui Khỏe",
