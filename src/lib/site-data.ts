@@ -160,10 +160,10 @@ export const gallery: GalleryItem[] = [
     image: work4,
     tags: ["Premiere Pro", "Canva", "Phóng sự"],
     body: [
-      "Đề tài các phóng sự đa dạng, bao gồm hai nhóm chính là phóng sự xã hội và phóng sự văn hóa."
-      "Tham gia vào quá trình ghi hình, phỏng vấn hiện trường."
-      "Biên tập, chỉnh sửa các phóng sự, bao gồm Tiêu điểm."
-      "Biên dịch, phiên dịch tiếng Anh khi phỏng vấn đối tượng nước ngoài."
+      "Đề tài các phóng sự đa dạng, bao gồm hai nhóm chính là phóng sự xã hội và phóng sự văn hóa.",
+      "Tham gia vào quá trình ghi hình, phỏng vấn hiện trường.",
+      "Biên tập, chỉnh sửa các phóng sự, bao gồm Tiêu điểm.",
+      "Biên dịch, phiên dịch tiếng Anh khi phỏng vấn đối tượng nước ngoài.",
       "Văn phong, phong cách cân bằng giữa việc phù hợp với tiêu chuẩn của kênh truyền hình nhà nước, vừa giữ được nhịp độ trẻ trung, phù hợp với đinh hướng của chương trình." ,
     ],
     images: [work1, work5],
@@ -172,8 +172,8 @@ export const gallery: GalleryItem[] = [
     links: [{ label: "Phóng sự: Tết Việt Tết Phố", href: "https://www.facebook.com/share/v/18Ns2xoKW1/", type: "facebook" }],
   },
   {
-    slug: "social-media-kit",
-    title: "Social media kit",
+    slug: "VNVK",
+    title: "Việt Nam Vui Khỏe",
     desc: "Bộ template đăng bài cho fanpage: ảnh bìa, ảnh vuông, story và carousel.",
     image: work1,
     tags: ["Canva", "Social Media", "Template"],
