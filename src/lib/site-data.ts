@@ -200,7 +200,7 @@ export const gallery: GalleryItem[] = [
     tags: ["Premiere Pro", "Canva", "Phóng sự"],
     body: [
       "Đề tài các phóng sự đa dạng, bao gồm hai nhóm chính là phóng sự xã hội và phóng sự văn hóa.",
-      "Tham gia vào quá trình ghi hình, phỏng vấn hiện trường.",
+      "Tham gia vào quá trình ghi hình, phỏng vấn hiện trường." ,
       "Biên tập, chỉnh sửa các phóng sự, bao gồm Tiêu điểm.",
       "Biên dịch, phiên dịch tiếng Anh khi phỏng vấn đối tượng nước ngoài.",
       "Văn phong, phong cách cân bằng giữa việc phù hợp với tiêu chuẩn của kênh truyền hình nhà nước, vừa giữ được nhịp độ trẻ trung, phù hợp với đinh hướng của chương trình." ,
