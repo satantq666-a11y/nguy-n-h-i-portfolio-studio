@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles } from "lucide-react";
-import avatar from "@/assets/avatar.png";
 import avatar1 from "@/assets/avatar1.png";
 import { SiteLayout } from "@/components/site-layout";
 import { profile, skills } from "@/lib/site-data";
