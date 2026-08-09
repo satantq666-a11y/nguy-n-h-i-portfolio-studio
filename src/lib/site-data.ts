@@ -12,8 +12,6 @@
  */
 import atvtv1 from "@/assets/atvtv1.png";
 import atvtv2 from "@/assets/atvtv2.png";
-
-import avatar from "@/assets/avatar.png";
 import avatar1 from "@/assets/avatar1.png";
 
 import cd24_1 from "@/assets/cd24_1.png";
@@ -70,9 +68,7 @@ export const profile = {
   location: "Hà Nội, Việt Nam",
   socials: [
     { label: "Facebook", href: "https://www.facebook.com/tofumother69/" },
-    { label: "Instagram", href: "https://instagram.com" },
-    { label: "YouTube", href: "https://youtube.com" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
+
   ],
 };
 
