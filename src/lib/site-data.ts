@@ -372,14 +372,14 @@ export const caseStudies: CaseStudy[] = [
       "Thực hiện Brand Audit kết hợp nghiên cứu thị trường, khách hàng và đối thủ; xây dựng chiến lược định vị thương hiệu, bộ nhận diện mới và kế hoạch Integrated Marketing Communication (IMC) nhằm phát triển Brand Equity cho HCD Music Center.",
     result: "Đề xuất hoàn chỉnh bao gồm: Định vị thương hiệu với POPs, PODs và Brand Positioning.; Bộ nhận diện thương hiệu (logo, slogan, brand mantra, brand statement); Chiến lược Marketing Mix (4P) và chiến dịch truyền thông 'Your Sound. Your Story' nhằm tăng nhận diện thương hiệu và thu hút học viên trong giai đoạn ra mắt.",
     tags: ["Brand Strategy", "Brand Audit", "Research", "Social Media"],
-    image: work3,
+    image: thumb_hcdmc,
     body: [
       "Giai đoạn 1 — Xác định vấn đề: Phân tích hiện trạng thương hiệu, thị trường và mục tiêu phát triển của HCD Music Center.",
       "Giai đoạn 2 — Nghiên cứu: Thu thập dữ liệu sơ cấp và thứ cấp; phân tích khách hàng, đối thủ, SWOT, POPs/PODs.",
       "Giai đoạn 3 — Đánh giá: Xác định khoảng trống trong nhận diện thương hiệu, truyền thông và trải nghiệm khách hàng.",
       "Giai đoạn 4 — Đề xuất giải pháp: Xây dựng định vị thương hiệu, hệ thống nhận diện, chiến lược Marketing và kế hoạch truyền thông tích hợp.",
     ],
-    images: [work1],
+    images: [hcd1],
     links: [
       { label: "Fanpage Cỏ Cây", href: "https://www.facebook.com/", type: "facebook" },
       {
@@ -397,7 +397,7 @@ export const caseStudies: CaseStudy[] = [
       "Thực hiện nghiên cứu thị trường, khảo sát hành vi khách hàng, phân tích đối thủ và xây dựng chiến dịch truyền thông đa nền tảng (Facebook, TikTok) với chiến lược Content-led, kết hợp sản xuất nội dung, MV quảng bá và hoạt động tương tác cộng đồng.",
     result: "Xây dựng hoàn chỉnh chiến dịch truyền thông với hệ thống nhận diện, content pillar, kế hoạch triển khai 3 giai đoạn và triển khai thực tế trên Facebook, TikTok. Chiến dịch đạt các mục tiêu về nhận diện, tương tác và tạo được sự lan tỏa đối với nhóm khách hàng trẻ.",
     tags: ["Campaign", "Content Writing", "Community"],
-    image: work1,
+    image: thumb_ltm,
     body: [
       "Dự án thuộc phạm vi hai môn học Multimedia Production Project và Content Strategy for Professionals. Nghiên cứu thị trường và hành vi khách hàng để xây dựng chiến dịch truyền thông số cho dự án du lịch Lều Trên Mây – Ba Vì, phát triển chiến lược nội dung đa nền tảng và triển khai chiến dịch thực tế nhằm nâng cao nhận diện điểm đến.",
       "Bước 1: Xác định vấn đề: Phân tích tiềm năng du lịch Ba Vì, nghiên cứu thị trường và nhu cầu của khách hàng mục tiêu.",
@@ -405,6 +405,7 @@ export const caseStudies: CaseStudy[] = [
       "Bước 3: Lập kế hoạch & triển khai: Xây dựng Big Idea, Key Message, Content Pillar, kế hoạch nội dung, timeline và sản xuất các sản phẩm truyền thông.",
       "Bước 4: Đánh giá kết quả: Theo dõi hiệu quả Facebook và TikTok, so sánh KPI với mục tiêu, tổng kết bài học và đề xuất cải thiện.",
     ],
+    images: [ltm1],
     links: [
       { label: "Báo cáo dự án chiến dịch truyền thông 'Lều trên mây'", href: "https://drive.google.com/file/d/1BfNjR9Ll-eTXxK3gnvLTY-9p421Szivd/view?usp=sharing", type: "drive" },
     ],
@@ -417,7 +418,7 @@ export const caseStudies: CaseStudy[] = [
       "Thực hiện nghiên cứu khách hàng mục tiêu, insight, hành vi tiếp nhận truyền thông và phân tích đối thủ. Từ đó xây dựng chiến dịch Transmedia với thông điệp 'Sống chậm lại – Nghĩ khác đi', triển khai đồng bộ trên eMagazine, Podcast/YouTube và Facebook.",
     result: "Hoàn thiện chiến dịch truyền thông đa nền tảng bao gồm Big Idea, Content Plan, hệ thống nội dung cho từng kênh và các sản phẩm truyền thông xuyên suốt, giúp truyền tải hình ảnh thương hiệu nhất quán và tăng khả năng tiếp cận nhóm khách hàng mục tiêu.",
     tags: ["Editorial", "Infographic", "Copywriting"],
-    image: work6,
+    image: thumb_queviet,
     body: [
        "Dự án là case study thuộc phạm vi môn học Transmedia Storytelling. Nghiên cứu insight khách hàng và hành vi truyền thông để xây dựng chiến dịch Transmedia cho Trà gạo lứt Quê Việt, phát triển storytelling và hệ thống nội dung đa nền tảng nhằm tăng nhận diện thương hiệu và lan tỏa thông điệp sống lành mạnh.",
       "Bước 1: Xác định vấn đề: Phân tích thương hiệu, mục tiêu dự án và bối cảnh thị trường.",
@@ -460,6 +461,7 @@ export const experience = [
     title: "Biên tập viên, Content Creator, Video Editor",
     org: "Phòng Văn hóa - VTV24, VTV - Đài Truyền hình Việt Nam",
     detail: "Intern tại VTV với nhiều kinh nghiệm thực tế học hỏi được.",
+    images: [vtt1, vtt2, vtt3],
   },
 ];
 
