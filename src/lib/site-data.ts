@@ -466,3 +466,5 @@ export const achievements = [
   "Sinh viên giỏi 5 kỳ liên tiếp",
   "Sản xuất hơn 60 ấn phẩm truyền thông trong 2 năm",
 ];
+// Vercel deployment sync
+//update
