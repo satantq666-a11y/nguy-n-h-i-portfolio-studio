@@ -93,10 +93,16 @@ export function SiteLayout({ children }: { children: ReactNode }) {
           </div>
           <div className="flex flex-wrap gap-2">
             {profile.socials.map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="sticker">
-                {s.label}
-              </a>
-            ))}
+  <a
+    key={s.label}
+    href={s.href}
+    target="_blank"
+    rel="noreferrer"
+    className="inline-flex items-center rounded-full border-2 border-foreground px-4 py-2 font-mono text-sm font-bold transition-transform hover:-translate-y-0.5"
+  >
+    {s.label}
+  </a>
+))}
           </div>
         </div>
         <p className="border-t border-border px-4 py-4 text-center font-mono text-xs text-muted-foreground">
