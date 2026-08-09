@@ -26,30 +26,42 @@ export const Route = createFileRoute("/kinh-nghiem")({
 function Timeline({
   items,
 }: {
-  items: { period: string; title: string; org: string; detail: string }[];
+  items: {
+    period: string;
+    title: string;
+    org: string;
+    detail: string;
+    images?: string[];
+  }[];
 }) {
   return (
     <ol className="mt-6 space-y-4">
       {items.map((it) => (
         <li key={it.title} className="paper-soft p-5">
-          <span className="font-mono text-xs text-muted-foreground">{it.period}</span>
-          <h3 className="mt-1 text-lg font-bold">{it.title}</h3>
-          <p className="font-mono text-sm">{it.org}</p>
-          <p className="mt-2 text-sm text-muted-foreground">{it.detail}</p>
-          {item.images && item.images.length > 0 && (
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-        {item.images.map((image) => (
-          <img
-            key={image}
-            src={image}
-            alt={item.title}
-            className="w-full aspect-video object-cover rounded-xl"
-          />
-        ))}
-      </div>
-    )}
+          <span className="font-mono text-xs text-muted-foreground">
+            {it.period}
+          </span>
 
-  </div>
+          <h3 className="mt-1 text-lg font-bold">{it.title}</h3>
+
+          <p className="font-mono text-sm">{it.org}</p>
+
+          <p className="mt-2 text-sm text-muted-foreground">
+            {it.detail}
+          </p>
+
+          {it.images && it.images.length > 0 && (
+            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {it.images.map((image) => (
+                <img
+                  key={image}
+                  src={image}
+                  alt={it.title}
+                  className="aspect-video w-full rounded-xl object-cover"
+                />
+              ))}
+            </div>
+          )}
         </li>
       ))}
     </ol>
