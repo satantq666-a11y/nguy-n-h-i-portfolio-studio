@@ -10,6 +10,49 @@
  * - `body`: các đoạn văn dài, CHỈ hiện ở trang chi tiết.
  * - `images`: ảnh phụ, CHỈ hiện ở trang chi tiết (tuỳ chọn).
  */
+import atvtv1 from "@/assets/atvtv1.png";
+import atvtv2 from "@/assets/atvtv2.png";
+
+import avatar from "@/assets/avatar.png";
+import avatar1 from "@/assets/avatar1.png";
+
+import cd24_1 from "@/assets/cd24_1.png";
+import cd24_2 from "@/assets/cd24_2.jpg";
+
+import cine7_1 from "@/assets/cine7_1.png";
+import cine7_2 from "@/assets/cine7_2.png";
+import cine7_3 from "@/assets/cine7_3.png";
+
+import hcd1 from "@/assets/hcd1.png";
+
+import highlight1 from "@/assets/highlight1.jpg";
+import highlight2 from "@/assets/highlight2.png";
+import highlight3 from "@/assets/highlight3.png";
+import highlight4 from "@/assets/highlight4.jpg";
+import highlight5 from "@/assets/highlight5.jpg";
+import highlight6 from "@/assets/highlight6.jpg";
+
+import ltm1 from "@/assets/ltm1.png";
+
+import ptb1 from "@/assets/ptb1.png";
+
+import thumb_atvtv from "@/assets/thumb_atvtv.png";
+import thumb_cd24h from "@/assets/thumb_cd24h.jpg";
+import thumb_cine7 from "@/assets/thumb_cine7.webp";
+import thumb_hcdmc from "@/assets/thumb_hcdmc.jpg";
+import thumb_ltm from "@/assets/thumb_ltm.png";
+import thumb_ptb from "@/assets/thumb_ptb.png";
+import thumb_queviet from "@/assets/thumb_queviet.jpg";
+import thumb_vnvk from "@/assets/thumb_vnvk.jpg";
+import thumb_vtv from "@/assets/thumb_vtv.jpg";
+
+import vtt1 from "@/assets/vtt1.jpg";
+import vtt2 from "@/assets/vtt2.jpg";
+import vtt3 from "@/assets/vtt3.jpg";
+
+import vtvv1 from "@/assets/vtvv1.png";
+import vtvv2 from "@/assets/vtvv2.png";
+
 import work1 from "@/assets/work-1.jpg";
 import work2 from "@/assets/work-2.jpg";
 import work3 from "@/assets/work-3.jpg";
@@ -66,7 +109,7 @@ export const mediaProjects: Project[] = [
     title: "Chuyển Động 24H - Tiêu điểm: ”Khi làng xã cần, đất vàng cũng hiến”",
     desc: "Góp phần biên tập tiêu điểm 'Khi làng xã cần, đất vàng cũng hiến', phát sóng ngày 14/03/2025 trong chương trình Chuyển động 24H trên VTV1.",
     tags: ["Premiere Pro", "Video Editing", "Phóng sự"],
-    image: work2,
+    image: highlight1,
     links: [
       {
         label: "Xem trên YouTube",
@@ -79,7 +122,7 @@ export const mediaProjects: Project[] = [
     title: "CINE7: Chị Tư Hậu",
     desc: "Biên tập băng phỏng vấn và trích đoạn tái hiện cảnh phim trong 'Chị Tư Hậu', sử dụng chút thủ thuật nho nhỏ vintage trắng đen :) .",
     tags: ["Premiere Pro", "Video Editing", "Phim tài liệu"],
-    image: work4,
+    image: highlight2,
     links: [
       {
         label: "Xem trên YouTube",
@@ -92,7 +135,7 @@ export const mediaProjects: Project[] = [
     title: "Đồ họa MC dẫn - Vì Tầm Vóc Việt số tháng 04/2025”",
     desc: "Lên kịch bản, dựng đồ họa minh họa và biên tập phóng sự có MC dẫn của chương trình 'Vì Tầm Vóc Việt số tháng 04/2025'.",
     tags: ["Scriptwriting", "Editorial", "Canva"],
-    image: work5,
+    image: highlight3,
     links: [
       {
         label: "Xem trên YouTube",
@@ -108,7 +151,7 @@ export const commsProjects: Project[] = [
     title: "Truyền thông Happy Tết 2026 Festival”",
     desc: "Quản lý đội nhóm, phối hợp với đơn vị BlueVN Agency triển khai chiến dịch truyền thông dành cho sự Kiện Happy Tết 2026 dưới sự chỉ đạo của Sở Du lịch Hà Nội.",
     tags: ["Campaign", "Social Media", "Management"],
-    image: work1,
+    image: highlight4,
     links: [
       {
         label: "Fanpage Happy Tết",
@@ -121,7 +164,7 @@ export const commsProjects: Project[] = [
     title: "Case study branding: HCD Music Center",
     desc: "Xây dựng Nhận diện Thương hiệu và Kế hoạch Truyền thông Marketing cho HCD Music Center, đề xuất được đánh giá cao bởi giảng viên môn Branding Management và founder của HCD Music Center.",
     tags: ["Brand Strategy", "Case Study", "Brand Audit"],
-    image: work3,
+    image: highlight5,
     links: [
       {
         label: "Xem bản đề xuất (Google Drive)",
@@ -134,7 +177,7 @@ export const commsProjects: Project[] = [
     title: "Content creator VTV SHOWS",
     desc: "Sáng tạo nội dung đa dạng cho fanpage VTV SHOWS - chuyên trang giải trí của VTV, trong giai đoạn tháng 1/2205 - 4/2025.",
     tags: ["Editorial", "Content", "Copywriting"],
-    image: work6,
+    image: highlight6,
     links: [
       { label: "Fanpage VTV SHOWS", href: "https://www.facebook.com/vtvshows", type: "facebook" },
     ],
@@ -157,7 +200,7 @@ export const gallery: GalleryItem[] = [
     slug: "chuyen-dong-24h",
     title: "Chuyển Động 24H",
     desc: "Tham gia vào quá trình sản xuất các phóng sự của chương trình Chuyển Động 24h, phát sóng trên VTV1, Đài Truyền hình Việt Nam.",
-    image: work4,
+    image: thumb_cd24h,
     tags: ["Premiere Pro", "Canva", "Phóng sự"],
     body: [
       "Đề tài các phóng sự đa dạng, bao gồm hai nhóm chính là phóng sự xã hội và phóng sự văn hóa.",
@@ -166,7 +209,7 @@ export const gallery: GalleryItem[] = [
       "Biên dịch, phiên dịch tiếng Anh khi phỏng vấn đối tượng nước ngoài.",
       "Văn phong, phong cách cân bằng giữa việc phù hợp với tiêu chuẩn của kênh truyền hình nhà nước, vừa giữ được nhịp độ trẻ trung, phù hợp với đinh hướng của chương trình." ,
     ],
-    images: [work1, work5],
+    images: [cd24_1,cd24_2],
     links: [
   {
     label: "Tiêu điểm: Khi làng xã cần, đất vàng cũng hiến",
@@ -189,7 +232,7 @@ export const gallery: GalleryItem[] = [
     slug: "vnvk",
     title: "Việt Nam Vui Khỏe",
     desc: "‘Việt Nam vui khỏe’ - chương trình hợp tác bởi VTV và Vinamilk - có được sự quan tâm của đông đảo khán giả.",
-    image: work1,
+    image: thumb_vnvk,
     tags: ["Premiere Pro", "Phóng sự"],
     body: [
       "Chương trình 'Việt Nam vui khỏe' là cuốn cẩm nang sức khỏe toàn diện về thể chất và tinh thần cho các thế hệ trong gia đình Việt, được lên sóng VTV1 vào 20h05 mỗi ngày.",
@@ -223,12 +266,13 @@ export const gallery: GalleryItem[] = [
     slug: "cine7",
     title: "CINE7 - Ký ức phim Việt",
     desc: " là chương trình truyền hình về điện ảnh trên kênh VTV3 của Đài Truyền hình Việt Nam. Chương trình phát sóng các tác phẩm điện ảnh nổi tiếng trong nước và quốc tế với sự dẫn dắt, bình luận từ các chuyên gia và khách mời yêu phim.",
-    image: work2,
+    image: thumb_cine7,
     tags: ["Premiere Pro", "Video Editing"],
     body: [
       "Chương trình sẽ ôn lại những tác phẩm vang bóng một thời của điện ảnh Cách mạng Việt Nam.",
       "Biên tập các đoạn phỏng vấn. Sử dụng thủ thuật để tái hiện lại các trích đoạn phim của điện ảnh Cách mạng Việt Nam.",
     ],
+    images: [cine7_1, cine7_2, cine7_3],
     links: [
       {
     label: "CINE7: Chị Tư Hậu",
@@ -246,12 +290,12 @@ export const gallery: GalleryItem[] = [
     slug: "vtvv",
     title: "Vì Tầm Vóc Việt",
     desc: "“Vì tầm vóc Việt” đưa ra những vấn đề thời sự về lứa tuổi học đường, với những phân tích, bình luận sâu sắc của các chuyên gia đầu ngành trong lĩnh vực giáo dục, y tế…",
-    image: work3,
+    image: thumb_vtvv,
     tags: ["Premiere Pro", "Video Editing", "Canva", "Greenscreen"],
     body: [
       "Sử dụng các công cụ thiết kế để dựng nên phóng sự MC dẫn với đồ họa minh họa cho phóng sự phông xanh (greenscreen).",
     ],
-    images: [work6],
+    images: [vtvv1, vtvv2],
     links: [
       {
         label: "Phóng sự MC dẫn: Vì Tầm Vóc Việt số tháng 04/2025",
@@ -269,13 +313,14 @@ export const gallery: GalleryItem[] = [
     slug: "atvtv",
     title: "Bộ khung nhận diện Ấn tượng VTV",
     desc: "Bộ khung Ấn tượng VTV được ra mắt để phù hợp với định hướng mới cho fanpage Ấn tượng VTV",
-    image: work5,
+    image: thumb_atvtv,
     tags: ["Design", "Photoshop"],
     body: [
       "Bộ khung Ấn tượng VTV 1.0 được ra mắt để phù hợp với định hướng mới cho fanpage, chuyển định hướng từ mỗi năm hoạt động một lần vào lúc trao giải VTV Adwards sang chia sẻ những khoảnh khắc ấn tượng trong các chương trình hàng ngày trên sóng VTV",
       "Tiếp nối phiên bản trước, bộ Khung nhận diện Ấn tượng VTV 2.0 được ra mắt với phong cách công nghệ hiện đại, với yêu cầu đổi mới trong kỷ nguyên vươn mình.",
       "Hai bộ khung được sử dụng trên fanpage 'Ấn tượng VTV' từ 03/2025 đến 01/2026", 
     ],
+    image: [atvtv1, atvtv2],
     links: [
       {
         label: "Bộ khung Ấn tượng VTV 1.0",
@@ -293,13 +338,14 @@ export const gallery: GalleryItem[] = [
     slug: "ptbtayphuong",
     title: "Photobook 'Chùa Tây Phương'",
     desc: "Dự án là bài tập cuối môn của môn PFD201 - Nhiếp ảnh.",
-    image: work6,
+    image: thumb_ptb,
     tags: ["Editorial", "Photographic", "InDesign"],
     body: [
       "Đây là một dự án kết hợp giữa hai kỹ năng - nhiếp ảnh và biên tập hình ảnh.",
       "Những hình ảnh được chụp tại Chùa Tây Phương. Chùa Tây Phương (tên chữ là Sùng Phúc tự 崇福寺) là một ngôi chùa được xây trên đỉnh đồi Câu Lâu thuộc xã Tây Phương, thành phố Hà Nội.",
       "Chụp bởi thiết bị iPhone Xs Max, biên tập, dàn trang bởi phần mềm Adobe InDesign.",
     ],
+    image: [ptb1],
     links: [{ label: "Xem bản đầy đủ", href: "https://drive.google.com/file/d/18ymFaR6-C3Gdtp4PUqVZqOr9pzquf9sn/view", type: "drive" }],
   },
 ];
