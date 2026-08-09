@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Sparkles } from "lucide-react";
 import avatar from "@/assets/avatar.png";
+import avatar1 from "@/assets/avatar1.png";
 import { SiteLayout } from "@/components/site-layout";
 import { profile, skills } from "@/lib/site-data";
 
@@ -62,7 +63,7 @@ function Index() {
 
           <div className="paper mx-auto w-full max-w-xs overflow-hidden p-4">
             <img
-              src={avatar}
+              src={avatar1}
               alt="Ảnh đại diện minh hoạ của Nguyễn Hải"
               width={768}
               height={768}
