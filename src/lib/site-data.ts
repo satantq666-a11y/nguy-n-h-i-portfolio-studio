@@ -44,7 +44,7 @@ import thumb_ltm from "@/assets/thumb_ltm.png";
 import thumb_ptb from "@/assets/thumb_ptb.png";
 import thumb_queviet from "@/assets/thumb_queviet.jpg";
 import thumb_vnvk from "@/assets/thumb_vnvk.jpg";
-import thumb_vtv from "@/assets/thumb_vtv.jpg";
+import thumb_vtvv from "@/assets/thumb_vtvv.jpg";
 
 import vtt1 from "@/assets/vtt1.jpg";
 import vtt2 from "@/assets/vtt2.jpg";
@@ -320,7 +320,7 @@ export const gallery: GalleryItem[] = [
       "Tiếp nối phiên bản trước, bộ Khung nhận diện Ấn tượng VTV 2.0 được ra mắt với phong cách công nghệ hiện đại, với yêu cầu đổi mới trong kỷ nguyên vươn mình.",
       "Hai bộ khung được sử dụng trên fanpage 'Ấn tượng VTV' từ 03/2025 đến 01/2026", 
     ],
-    image: [atvtv1, atvtv2],
+    images: [atvtv1, atvtv2],
     links: [
       {
         label: "Bộ khung Ấn tượng VTV 1.0",
@@ -345,7 +345,7 @@ export const gallery: GalleryItem[] = [
       "Những hình ảnh được chụp tại Chùa Tây Phương. Chùa Tây Phương (tên chữ là Sùng Phúc tự 崇福寺) là một ngôi chùa được xây trên đỉnh đồi Câu Lâu thuộc xã Tây Phương, thành phố Hà Nội.",
       "Chụp bởi thiết bị iPhone Xs Max, biên tập, dàn trang bởi phần mềm Adobe InDesign.",
     ],
-    image: [ptb1],
+    images: [ptb1],
     links: [{ label: "Xem bản đầy đủ", href: "https://drive.google.com/file/d/18ymFaR6-C3Gdtp4PUqVZqOr9pzquf9sn/view", type: "drive" }],
   },
 ];
