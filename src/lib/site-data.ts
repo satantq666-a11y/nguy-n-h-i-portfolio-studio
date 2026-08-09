@@ -12,7 +12,7 @@
  */
 import atvtv1 from "@/assets/atvtv1.png";
 import atvtv2 from "@/assets/atvtv2.png";
-import avatar1 from "@/assets/avatar1.png";
+import avatarhai from "@/assets/avatarhai.png";
 
 import cd24_1 from "@/assets/cd24_1.png";
 import cd24_2 from "@/assets/cd24_2.jpg";
