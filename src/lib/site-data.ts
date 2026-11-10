@@ -150,11 +150,6 @@ export const commsProjects: Project[] = [
     image: highlight4,
     links: [
       {
-        label: "Fanpage Happy Tết",
-        href: "https://www.facebook.com/happytet2024",
-        type: "facebook",
-      },
-      {
         label: "Xem báo cáo dự án (Google Drive)",
         href: "https://drive.google.com/file/d/1IUPHH_3tX_9y8WSeMUDj4kpB0jVuLo59/view?usp=sharing",
         type: "drive",
