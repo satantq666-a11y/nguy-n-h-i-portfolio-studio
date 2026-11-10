@@ -171,7 +171,7 @@ export const commsProjects: Project[] = [
   },
   {
     title: "Content creator VTV SHOWS",
-    desc: "Sáng tạo nội dung đa dạng cho fanpage VTV SHOWS - chuyên trang giải trí của VTV, trong giai đoạn tháng 1/2205 - 4/2025.",
+    desc: "Sáng tạo nội dung đa dạng cho fanpage VTV SHOWS - chuyên trang giải trí của VTV, trong giai đoạn tháng 1/2025 - 4/2025.",
     tags: ["Editorial", "Content", "Copywriting"],
     image: highlight6,
     links: [
