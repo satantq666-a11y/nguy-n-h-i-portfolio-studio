@@ -144,7 +144,7 @@ export const mediaProjects: Project[] = [
 
 export const commsProjects: Project[] = [
   {
-    title: "Truyền thông Happy Tết 2026 Festival”",
+    title: "Truyền thông Happy Tết 2026 Festival",
     desc: "Quản lý đội nhóm, phối hợp với đơn vị BlueVN Agency triển khai chiến dịch truyền thông dành cho sự Kiện Happy Tết 2026 dưới sự chỉ đạo của Sở Du lịch Hà Nội.",
     tags: ["Campaign", "Social Media", "Management"],
     image: highlight4,
